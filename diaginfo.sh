@@ -1,12 +1,13 @@
 #!/bin/bash
 #------------------------------------------------------------------------------
 # 
+# Basic diagnostic script
 # 
-# Compiler: Nate Mitchell <nathan@accpick.co.za>
+# Compiler: Nate Mitchell <nahtanjamesmitchell@gmail.com>
 #
 # License ISC License
 # 
-# Copyright (c) 2013, Nate Mitchell <nathan@accpick.co.za>
+# Copyright (c) 2013, Nate Mitchell <nathanjamesmitchell@gmail.com>
 #
 # Permission to use, copy, modify, and/or distribute this software for any
 # purpose with or without fee is hereby granted, provided that the above
@@ -55,7 +56,7 @@ loadAverage=$(w | grep "lad av" | awk -F":" '{print $5}')
 totalRAM=$(cat /proc/meminfo | grep -i memtotal | awk '{print $2}')
 
 
-echo -e "$txtbld Accpick Diagnostic Script" $txtrst
+echo -e "$txtbld Diagnostic Script" $txtrst
 echo -e "----------------------------------------------------------------------"
 echo ""
 echo -e "$txtbld Network Information:" $txtrst
